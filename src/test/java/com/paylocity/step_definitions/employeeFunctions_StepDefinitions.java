@@ -1,9 +1,12 @@
 package com.paylocity.step_definitions;
 
 import com.paylocity.pages.EmployeeFunctionsPage;
+import com.paylocity.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+
+import java.util.concurrent.TimeUnit;
 
 public class employeeFunctions_StepDefinitions {
 
@@ -11,11 +14,12 @@ EmployeeFunctionsPage employeeFunctionsPage = new EmployeeFunctionsPage();
 
     @When("Employer clicks on Add Employee button")
     public void employer_clicks_on_add_employee_button() {
-
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         EmployeeFunctionsPage.addEmployeeButton.click();
     }
     @Then("Employer should be able to enter First Name {string}")
     public void employer_should_be_able_to_enter_first_name(String string) {
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     EmployeeFunctionsPage.enterFirstName.sendKeys(string);
     }
 
@@ -67,31 +71,7 @@ EmployeeFunctionsPage employeeFunctionsPage = new EmployeeFunctionsPage();
             Assert.assertTrue(EmployeeFunctionsPage.benefitsCost.isDisplayed());
         }
 
-           /* @When("Employer select the Action Edit")
-            public void employer_select_the_action_edit() {
 
-            }
-
-            @Then("Then Employer should be able to change First Name Steve to {string}")
-            public void then_employer_should_be_able_to_change_first_name_steve_to(String string) {
-
-            }
-
-            @Then("Employer should be able to change Last Name Jobs to {string}")
-            public void employer_should_be_able_to_change_last_name_jobs_to(String string) {
-
-            }
-
-            @Then("Employer should be able to change Dependents {int} to {string}")
-            public void employer_should_be_able_to_change_dependents_to(Integer int1, String string) {
-
-            }
-
-            @Then("the data should change in the table")
-            public void the_data_should_change_in_the_table() {
-                EmployeeFunctionsPage.editEmployeeButton.click();
-            }
-*/
         }
 
 

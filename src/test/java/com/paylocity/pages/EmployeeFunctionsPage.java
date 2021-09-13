@@ -35,7 +35,42 @@ public class EmployeeFunctionsPage {
     @FindBy(xpath = "//td[.='76.92']")
     public static WebElement benefitsCost;
 
-    @FindBy(xpath = "//i[@class='fas fa-edit']/..")
+
+
+   // public DeleteEmployeePage() {
+       // PageFactory.initElements(Driver.getDriver(), this);
+
+
+    @FindBy(xpath = "//i[@class='fas fa-times']")
+    public static WebElement deleteActionButton;
+
+    @FindBy(xpath = "//button[@id='deleteEmployee']")
+    public static WebElement deleteButton;
+
+    @FindBy(xpath = "//td[.='No employees found.']")
+    public static WebElement messageDisplayed;
+
+
+   // public EditEmployeePage() {
+      //  PageFactory.initElements(Driver.getDriver(), this);
+   // }
+
+    @FindBy(xpath = "(//i[@class='fas fa-edit'])[1]")
     public static WebElement editEmployeeButton;
+
+    @FindBy(xpath = "//input[@id='firstName']")
+    public static WebElement editFirstName;
+
+    @FindBy(xpath = "//input[@id='lastName']")
+    public static WebElement editLastName;
+
+    @FindBy(xpath = "//input[@id='dependants']")
+    public static WebElement editDependants;
+
+    @FindBy(xpath = "//button[@id='updateEmployee']")
+    public static WebElement updateEmployeeButton;
+
+
+
 
 }
