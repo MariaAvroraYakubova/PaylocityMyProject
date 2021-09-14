@@ -8,8 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
 
-
-public class GetEmployeeListTest {
+public class GetEmployeeById {
 
     @BeforeAll
 
@@ -25,15 +24,17 @@ public class GetEmployeeListTest {
 
         RestAssured.reset();
     }
-            @DisplayName("Get Employee List")
-                    @Test
-public void test1(){
+    @DisplayName("Get One Employee by id ")
+    @Test
+    public void getOneEmployeeById(){
+        given()
+                .header("Authorization", "Basic VGVzdFVzZXI0OTpHI18wJEFfbWpwNC0=")
+                .pathParam("id","969dd042-4dbf-4980-91bd-e5f5cee50acf")
+                .when()
+                .get("/api/employees/{id}")
+                .then()
+                .log().body();
 
 
-                    given()
-                    .header("Authorization", "Basic VGVzdFVzZXI0OTpHI18wJEFfbWpwNC0=")
-                    .when().get()
-                    .then().log().all().statusCode(200);
-
-        }
+    }
 }

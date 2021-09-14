@@ -35,4 +35,4 @@ Scenario:
  Scenario:
   When Employer click on the Delete Action button
   Then Employer click on the Delete button
-  Then the Employee should be deleted and see the message "No employees found."
+  Then the Employee should be deleted

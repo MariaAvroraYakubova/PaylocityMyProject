@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class EmployeeFunctionsPage {
 
     public EmployeeFunctionsPage() {
@@ -47,8 +49,9 @@ public class EmployeeFunctionsPage {
     @FindBy(xpath = "//button[@id='deleteEmployee']")
     public static WebElement deleteButton;
 
-    @FindBy(xpath = "//td[.='No employees found.']")
-    public static WebElement messageDisplayed;
+    @FindBy(xpath = "//tr/td[2]")
+    public static List<WebElement> allFirstNames;
+
 
 
    // public EditEmployeePage() {

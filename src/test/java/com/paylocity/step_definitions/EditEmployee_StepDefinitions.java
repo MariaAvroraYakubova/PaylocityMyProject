@@ -9,20 +9,20 @@ import java.util.concurrent.TimeUnit;
 
 public class EditEmployee_StepDefinitions {
 
-    EmployeeFunctionsPage editEmployeePage = new EmployeeFunctionsPage();
+    EmployeeFunctionsPage employeeFunctionsPage = new EmployeeFunctionsPage();
 
     @When("Employer select the Action Edit")
     public void employer_select_the_action_edit() {
 
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        EmployeeFunctionsPage.editEmployeeButton.click();
+        employeeFunctionsPage.editEmployeeButton.click();
     }
 
 
     @Then("Employer should be able to change First Name Steve to {string}")
     public void employerShouldBeAbleToChangeFirstNameSteveTo(String string) {
-        EmployeeFunctionsPage.editFirstName.clear();
-        EmployeeFunctionsPage.editFirstName.sendKeys(string);
+        employeeFunctionsPage.editFirstName.clear();
+        employeeFunctionsPage.editFirstName.sendKeys(string);
     }
 
     @Then("Employer should be able to change Last Name Jobs to {string}")
