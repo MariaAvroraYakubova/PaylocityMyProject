@@ -5,8 +5,6 @@ import com.paylocity.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,7 +25,6 @@ public class DeleteEmployee_StepDefinitions {
 
     @Then("the Employee should be deleted and see the message {string}")
     public void theEmployeeShouldBeDeletedAndSeeTheMessage(String string) {
-
         EmployeeFunctionsPage.messageDisplayed.isDisplayed();
 
         String actualMessageText = deleteEmployeePage.messageDisplayed.getText();
