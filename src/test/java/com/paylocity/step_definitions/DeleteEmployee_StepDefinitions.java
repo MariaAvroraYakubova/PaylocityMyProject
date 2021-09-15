@@ -4,12 +4,8 @@ import com.paylocity.pages.EmployeeFunctionsPage;
 import com.paylocity.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
-
-import static com.paylocity.pages.EmployeeFunctionsPage.allFirstNames;
 
 public class DeleteEmployee_StepDefinitions {
 
@@ -23,14 +19,18 @@ public class DeleteEmployee_StepDefinitions {
 
     @Then("Employer click on the Delete button")
     public void employerClickOnTheDeleteButton() {
-        employeeFunctionsPage.deleteButton.click();
-    }
+        //Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+
+            employeeFunctionsPage.deleteButton.click();
+
+        }
 
     @Then("the Employee should be deleted")
     public void theEmployeeShouldBeDeleted() {
-
+/*
         //6. Print out count of all the links on landing page
-        //List<WebElement> allFirstNames = Driver.getDriver().findElements(By.xpath("//tr/td[2]"));
+        List<WebElement> allFirstNames = Driver.getDriver().findElements(By.xpath("//tr/td[2]"));
 
         System.out.println("All Employees are in this page: " + allFirstNames.size());
 
@@ -40,8 +40,11 @@ public class DeleteEmployee_StepDefinitions {
             System.out.println("eachLink = "+each.getText());
 
             Assert.assertFalse(each.getText().equalsIgnoreCase("Steve"));
+           // Assert.assertTrue(!each.getText().equals("Mark"));
         }
 
+
+ */
 /*
         String actualMessageText = deleteEmployeePage.messageDisplayed.getText();
         String expectedMessageText = "No employees found.";

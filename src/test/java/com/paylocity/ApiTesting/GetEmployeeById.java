@@ -16,7 +16,7 @@ public class GetEmployeeById {
         baseURI =
                 "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com";
         basePath =
-                "Prod/api/employees";
+                "Prod/";
     }
 
     @AfterAll
@@ -29,11 +29,12 @@ public class GetEmployeeById {
     public void getOneEmployeeById(){
         given()
                 .header("Authorization", "Basic VGVzdFVzZXI0OTpHI18wJEFfbWpwNC0=")
-                .pathParam("id","969dd042-4dbf-4980-91bd-e5f5cee50acf")
+                .pathParam("id","ace52731-495d-46cf-8284-3d1735af6a08")
                 .when()
                 .get("/api/employees/{id}")
                 .then()
-                .log().body();
+                .log().all()
+                .statusCode(200);
 
 
     }

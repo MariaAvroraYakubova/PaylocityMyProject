@@ -3,6 +3,7 @@ Feature: Add Employee functionality
  As an Employer, I want to input my employee data
  so that I can get a preview of benefit costs.
 
+
 Scenario:
  Given Employer is on the login page
  When Employer input username
@@ -29,7 +30,7 @@ Scenario:
   Then Employer should be able to change Last Name Jobs to "Zuckerderg"
   Then Employer should be able to change Dependents 2 to "0"
   Then Employer should be able to click on Update button
-  And the data should change in the table
+  #And the data should change in the table
 
 
  Scenario:

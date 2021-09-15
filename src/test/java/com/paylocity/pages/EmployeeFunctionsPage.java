@@ -37,7 +37,8 @@ public class EmployeeFunctionsPage {
     @FindBy(xpath = "//td[.='76.92']")
     public static WebElement benefitsCost;
 
-
+   // @FindBy(xpath = "//td[.='f7d1c99b-c05c-4c2e-a90f-9208913202aa']")
+    //public static WebElement idIsOnTheTable;
 
    // public DeleteEmployeePage() {
        // PageFactory.initElements(Driver.getDriver(), this);
@@ -52,12 +53,11 @@ public class EmployeeFunctionsPage {
     @FindBy(xpath = "//tr/td[2]")
     public static List<WebElement> allFirstNames;
 
-
-
-   // public EditEmployeePage() {
-      //  PageFactory.initElements(Driver.getDriver(), this);
-   // }
-
+/*
+   public EditEmployeePage() {
+       PageFactory.initElements(Driver.getDriver(), this);
+   }
+ */
     @FindBy(xpath = "(//i[@class='fas fa-edit'])[1]")
     public static WebElement editEmployeeButton;
 
