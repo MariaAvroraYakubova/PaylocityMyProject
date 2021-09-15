@@ -42,10 +42,10 @@ public class EditEmployee_StepDefinitions {
         employeeFunctionsPage.updateEmployeeButton.click();
     }
 
-    @Then("the data should change in the table")
-    public void the_data_should_change_in_the_table() {
+   // @Then("the data should change in the table")
+   // public void the_data_should_change_in_the_table() {
 
-    }
+   // }
 
     }
 

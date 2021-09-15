@@ -3,7 +3,7 @@ Feature: Add Employee functionality
  As an Employer, I want to input my employee data
  so that I can get a preview of benefit costs.
 
-
+#Background:
 Scenario:
  Given Employer is on the login page
  When Employer input username

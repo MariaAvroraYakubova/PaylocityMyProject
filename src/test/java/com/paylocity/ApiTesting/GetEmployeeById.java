@@ -29,7 +29,7 @@ public class GetEmployeeById {
     public void getOneEmployeeById(){
         given()
                 .header("Authorization", "Basic VGVzdFVzZXI0OTpHI18wJEFfbWpwNC0=")
-                .pathParam("id","ace52731-495d-46cf-8284-3d1735af6a08")
+                .pathParam("id","935a1e15-40f5-4612-abf7-b3491efaecd9")
                 .when()
                 .get("/api/employees/{id}")
                 .then()

@@ -37,23 +37,11 @@ public class EmployeeFunctionsPage {
     @FindBy(xpath = "//td[.='76.92']")
     public static WebElement benefitsCost;
 
-   // @FindBy(xpath = "//td[.='f7d1c99b-c05c-4c2e-a90f-9208913202aa']")
+    // @FindBy(xpath = "//td[.='f7d1c99b-c05c-4c2e-a90f-9208913202aa']")
     //public static WebElement idIsOnTheTable;
 
-   // public DeleteEmployeePage() {
-       // PageFactory.initElements(Driver.getDriver(), this);
 
-
-    @FindBy(xpath = "//i[@class='fas fa-times']")
-    public static WebElement deleteActionButton;
-
-    @FindBy(xpath = "//button[@id='deleteEmployee']")
-    public static WebElement deleteButton;
-
-    @FindBy(xpath = "//tr/td[2]")
-    public static List<WebElement> allFirstNames;
-
-/*
+    /*
    public EditEmployeePage() {
        PageFactory.initElements(Driver.getDriver(), this);
    }
@@ -74,6 +62,18 @@ public class EmployeeFunctionsPage {
     public static WebElement updateEmployeeButton;
 
 
+    // public DeleteEmployeePage() {
+    // PageFactory.initElements(Driver.getDriver(), this);
 
+    @FindBy(xpath = "//i[@class='fas fa-times']")
+    public static WebElement deleteActionButton;
 
+    @FindBy(xpath = "//button[@id='deleteEmployee']")
+    public static WebElement deleteButton;
+
+    @FindBy(xpath = "//td[.='No employees found.']")
+    public static WebElement messageDisplayed;
+
+    @FindBy (xpath = "//tr/td[2]")//(xpath = "//body")
+    public static List<WebElement> allFirstNames;
 }

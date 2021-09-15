@@ -30,11 +30,11 @@ public class PutUpdateEmployee {
     public void testUpdateEmployeeData(){
 
         String updateEmployee = "{\n" +
-                        "\"id\": \"c1b16dd6-adef-4c5d-b4a0-2eff9d112c34\",\n" +
+                        "\"id\": \"e06de896-4a88-485d-a787-e5a237c96c08\",\n" +
 
                         "        \"firstName\": \"Zoe\",\n" +
                         "        \"lastName\": \"White\",\n" +
-                        "        \"dependants\": 0,\n" +
+                        "        \"dependants\": 3,\n" +
                         "    }";
         given()
                 .contentType(ContentType.JSON)

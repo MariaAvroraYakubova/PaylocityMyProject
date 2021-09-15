@@ -72,20 +72,6 @@ EmployeeFunctionsPage employeeFunctionsPage = new EmployeeFunctionsPage();
         Assert.assertTrue(employeeFunctionsPage.lastNameIsOnTheTable.isDisplayed());
 
     }
-    /*
-    @And("Employer should see the id of Employee on the table")
-    public void employerShouldSeeTheIdOfEmployeeOnTheTable() {
-        String actualEmployeeId = employeeFunctionsPage.idIsOnTheTable.getText();
-        String expectedEmployeeId = "//td[.='f7d1c99b-c05c-4c2e-a90f-9208913202aa']";
-
-        //Checking the context of the web element
-        Assert.assertTrue(actualEmployeeId.equalsIgnoreCase(expectedEmployeeId));
-
-        //Checking if the web element displayed or not
-        Assert.assertTrue(employeeFunctionsPage.idIsOnTheTable.isDisplayed());
-
-
-     */
 
 
         @Then("the benefit cost calculations are correct")

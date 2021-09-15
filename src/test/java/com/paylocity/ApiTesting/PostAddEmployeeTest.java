@@ -29,9 +29,9 @@ public class PostAddEmployeeTest {
 
     String addEmployee = "{\n" +
 
-            "        \"firstName\": \"Avrora\",\n" +
-            "        \"lastName\": \"Pokita\",\n" +
-            "        \"dependants\": 6,\n" +
+            "        \"firstName\": \"Tom\",\n" +
+            "        \"lastName\": \"Yam\",\n" +
+            "        \"dependants\": 2,\n" +
             "    }";
         given()
                 //.contentType(ContentType.JSON)
